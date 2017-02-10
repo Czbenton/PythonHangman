@@ -1,16 +1,14 @@
-import AvailableWords
+import GameLogic
 
 rightGuesses = []
 wrongGuesses = []
+gameWord = list(GameLogic.selectRandomWord())
 
-AvailableWords.populateAvailableWords()
-gameWord = list(AvailableWords.selectRandomWord())
 
-for x in range(len(gameWord)):
-    rightGuesses.append("_")
+def createGameBoard():
+    for x in range(len(gameWord)):
+        rightGuesses.append("_")
 
-print(gameWord)
-print(rightGuesses)
 
 def makeAGuess():
     userGuess = input("Please enter a guess!\n")
@@ -24,5 +22,10 @@ def makeAGuess():
 
     print(rightGuesses)
 
+
+print(gameWord) #todo cheat mode
+
+createGameBoard()
+print(rightGuesses)
 while "_" in rightGuesses:
     makeAGuess()
