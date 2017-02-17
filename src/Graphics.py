@@ -1,23 +1,23 @@
 def printGallows(counter):
-    if counter == 1:
+    if counter == 0:
         gallows = "---------\n      |\n      |\n      |\n      |\n      |\n_________"
-    elif counter == 2:
+    elif counter == 1:
         gallows = "---------\n    | |\n      |\n      |\n      |\n      |\n_________"
-    elif counter == 3:
+    elif counter == 2:
         gallows = "---------\n    | |\n   () |\n      |\n      |\n      |\n_________"
-    elif counter == 4:
+    elif counter == 3:
         gallows = "---------\n    | |\n   () |\n  \   |\n      |\n      |\n_________"
-    elif counter == 5:
+    elif counter == 4:
         gallows = "---------\n    | |\n   () |\n  \|  |\n      |\n      |\n_________"
-    elif counter == 6:
+    elif counter == 5:
         gallows = "---------\n    | |\n   () |\n  \|| |\n      |\n      |\n_________"
-    elif counter == 7:
+    elif counter == 6:
         gallows = "---------\n    | |\n   () |\n  \||/|\n      |\n      |\n_________"
-    elif counter == 8:
+    elif counter == 7:
         gallows = "---------\n    | |\n   () |\n  \||/|\n   /  |\n      |\n_________"
-    elif counter == 9:
+    elif counter == 8:
         gallows = "---------\n    | |\n   () |\n  \||/|\n   /\ |\n      |\n_________"
-    elif counter == 10:
+    elif counter == 9:
         gallows = "---------\n    | |\n   () |\n  \||/|\n   /\ |\n  /   |\n_________"
     else:
         gallows = "---------\n    | |\n   () |\n  \||/|\n   /\ |\n  /  \|\n_________"

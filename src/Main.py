@@ -7,7 +7,10 @@ GameLogic.createGameBoard()
 print(GameLogic.rightGuesses)
 counter = 0
 while "_" in GameLogic.rightGuesses:
-    GameLogic.makeAGuess()
-    counter = GameLogic.increment(counter)
+    counter = GameLogic.makeAGuess(counter)
+    print(counter)
+    Graphics.printGallows(counter)
+    if counter == 10:
+        break
 
-print("Game over!")
+print("Game over!!")
