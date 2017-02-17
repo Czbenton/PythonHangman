@@ -23,7 +23,8 @@ def createGameBoard():
         rightGuesses.append("_")
 
 
-def makeAGuess():
+# TODO: 
+def makeAGuess(counter):
     userGuess = input("Please enter a guess!\n")
     if userGuess in gameWord:
         for x in range(len(gameWord)):
@@ -32,7 +33,10 @@ def makeAGuess():
     else:
         wrongGuesses.append(userGuess)
         print("Wrong. Try again.", wrongGuesses)
-
     print(rightGuesses)
 
 
+def inc(counter):
+    counter += 1
+    print(counter)
+    return counter

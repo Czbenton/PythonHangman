@@ -1,11 +1,13 @@
 import GameLogic
 import Graphics
 
-print(Graphics.board1, sep="\n")
-
-print(GameLogic.gameWord) #todo cheat mode
+print(GameLogic.gameWord)  # todo cheat mode
 
 GameLogic.createGameBoard()
 print(GameLogic.rightGuesses)
+counter = 0
 while "_" in GameLogic.rightGuesses:
-    GameLogic.makeAGuess()
+    GameLogic.makeAGuess(counter)
+    counter = GameLogic.inc(counter)
+
+print("Game over!")
