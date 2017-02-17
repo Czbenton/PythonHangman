@@ -1,14 +1,13 @@
 import GameLogic
 import Graphics
 
-print(GameLogic.gameWord)  # todo cheat mode
+print(GameLogic.gameWord, "cheat mode on")  # todo cheat mode
 
 GameLogic.createGameBoard()
 print(GameLogic.rightGuesses)
 counter = 0
-while "_" in GameLogic.rightGuesses:
+while True:
     counter = GameLogic.makeAGuess(counter)
-    print(counter)
     Graphics.printGallows(counter)
     if counter == 10:
         break
